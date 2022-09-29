@@ -18,3 +18,6 @@ def er():
 def beau():
     return "Il fait beau !"
 
+@app.get("/cloud")
+def nuages():
+    return "Il y a des nuages !"

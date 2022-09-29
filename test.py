@@ -16,3 +16,7 @@ def test_data():
 def test_sun(): 
     r = requests.get("http://localhost:8000/sun")
     assert r.json() == "Il fait beau !"
+
+def test_cloud(): 
+    r = requests.get("http://localhost:8000/cloud")
+    assert r.status_code == 200
