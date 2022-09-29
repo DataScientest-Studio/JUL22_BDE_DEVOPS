@@ -14,3 +14,7 @@ def stat():
 def er():
     return {"data":"hello"}
 
+@app.get("/sun")
+def beau():
+    return "Il fait beau !"
+
