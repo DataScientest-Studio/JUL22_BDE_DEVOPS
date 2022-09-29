@@ -11,5 +11,8 @@ def test_status():
 
 def test_data(): 
     r = requests.get("http://localhost:8000/data")
-    r.status_code == 200
+    assert r.status_code == 200
 
+def test_sun(): 
+    r = requests.get("http://localhost:8000/sun")
+    assert r.json() == "Il fait beau !"
